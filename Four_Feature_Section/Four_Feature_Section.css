@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Fira+Sans:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.main{
+    text-align: center;
+}
+.head{
+    margin: 0 auto;
+    text-align: center;
+    width: 500px;
+    height: 200px;
+    margin-top: 40px;
+    /* margin-bottom: 20px; */
+}
+.head h1{
+    font-size: 26px;
+    font-weight: 150;
+}
+
+.head h2{
+    font-size: 32px;
+    font-weight: bolder;
+    margin: 10px;
+}
+.body{
+    display: flex;
+    align-items: center;
+    /* border: 10px solid red; */
+}
+.body div{
+    text-align: left;
+    width: 350px;
+    height: 250px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow:  0 0 10px 10px rgb(241, 232, 232);
+    overflow: hidden;
+}
+.body div h1{
+    margin: 20px;
+    font-size: 21px;
+    font-weight: bolder;
+}
+.body div p{
+    margin: 20px;
+}
+#two{
+    box-shadow: none;
+    border-radius: 0%;
+    height: 200%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+}
+.one{
+    position: relative;
+}
+.one::before{
+    position: absolute;
+    left: 0%;
+    content: '';
+    width: 349px;
+    height: 3px;
+    background-color: rgb(2, 251, 255);
+}
+.three{
+    position: relative;
+}
+.three::before{
+    position: absolute;
+    left: 0%;
+    content: '';
+    width: 349px;
+    height: 3px;
+    background-color: rgb(2, 251, 255);
+}
+.a{
+    position: relative;
+}
+.a::before{
+    position: absolute;
+    left: 0%;
+    content: '';
+    width: 349px;
+    height: 3px;
+    background-color: red;
+}
+.b{
+    position: relative;
+}
+.b::before{
+    position: absolute;
+    left: 0%;
+    content: '';
+    width: 349px;
+    height: 3px;
+    background-color: gold;
+}
+img{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.footer{
+    margin-top: 50px;
+}
+@media screen and (max-width: 375px){
+    .head{
+        width: 355px;
+    }
+    .body{
+        display: flex;
+        flex-direction: column;
+    }
+    #two{
+        display: flex;
+        flex-direction: column;
+    }
+}

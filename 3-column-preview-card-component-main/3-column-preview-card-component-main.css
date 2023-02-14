@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: fira sans; */
+    font-family: fira sans;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    width: 310px;
+    height: 500px;
+    padding: 50px;
+}
+div h1{
+    margin-bottom: 20px;
+    color: white;
+}
+div p{
+    margin-bottom: 30px;
+    color: white;
+    opacity: 0.6;
+    line-height: 1.5em;
+}
+.sedans{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: rgb(226, 133, 37);
+    border-radius: 10px 0 0 10px;
+}
+.sedans button{
+    color: rgb(226, 133, 37);
+}
+.sedans button:hover{
+    background-color: rgb(226, 133, 37);
+    color: white;
+}
+.suvs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: rgb(17, 175, 162);
+}
+.suvs button{
+    color: rgb(17, 175, 162);
+}
+.suvs button:hover{
+    background-color: rgb(17, 175, 162);
+    color: white;
+}
+.luxury{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: rgb(1, 63, 57);
+    border-radius: 0 10px 10px 0;
+}
+.luxury button{
+    color: rgb(1, 63, 57);
+}
+.luxury button:hover{
+    background-color: rgb(1, 63, 57);
+    color: white;
+}
+button{
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 1s;
+}
+@media screen and (max-width: 675px){
+    body{
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0;
+    }
+}
